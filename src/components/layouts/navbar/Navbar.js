@@ -3,13 +3,13 @@ import logo from "../../../assets/img/Logo.png";
 import ThemeToggler from "../../themeToggler/ThemeToggler";
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-10 bg-white">
+    <nav className="w-full sticky top-0 z-10 bg-white">
       <div className="container  mx-auto flex justify-between  py-[20px] shadow-lg ">
         <div>
           <img src={logo} />
         </div>
         <div>
-          <ul className="flex gap-[40px]">
+          <ul className="hidden flex gap-[40px] ">
             <li>
               <a className="text-[#3B3C4A] text-base">Home</a>
             </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-3  ">
+        <div className=" hidden flex items-center gap-3  ">
           <div className="relative">
             <input
               type="text"

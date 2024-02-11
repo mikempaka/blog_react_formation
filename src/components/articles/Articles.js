@@ -3,7 +3,7 @@ import articleImg from "../../assets/img/articleImg.png";
 import authorPic from "../../assets/img/authorPic.png";
 const Articles = () => {
   return (
-    <article className="w-[392px] p-4 rounded-xl border border-solid border-[#E8E8EA] shadow-lg transition ease-in-out delay-150 hover:scale-110 duration-300">
+    <article className="w-full lg:w-[350px] p-4 rounded-xl border border-solid border-[#E8E8EA] shadow-lg transition ease-in-out delay-150 hover:transform-none lg:hover:scale-110 duration-300 mb-5">
       <img
         src={articleImg}
         alt="articleImage"

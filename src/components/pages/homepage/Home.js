@@ -9,9 +9,13 @@ const Home = () => {
       <Navbar />
       <section>
         <div className="container mx-auto relative">
-          <img src={HeroImg} alt="fond" className="w-full h-[500px]" />
+          <img
+            src={HeroImg}
+            alt="fond"
+            className="w-full h-full md:h-[500px]"
+          />
         </div>
-        <div className="w-[598px] bg-white rounded-xl shadow-lg p-[40px] absolute bottom-[-80px] left-[90px]">
+        <div className="w-full lg:w-[598px] bg-white rounded-xl shadow-lg p-[40px] static lg:absolute bottom-0 md:bottom-[-80px] left-0 lg:left-[90px]">
           <a className="bg-[#4B6BFB] text-white text-xs py-1 px-[10px] rounded-md">
             Technologie
           </a>
@@ -26,9 +30,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-24">
+      <section className="mt-10 lg:mt-24">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 ">
+          <div className="block lg:grid grid-cols-3 gap-5 ">
             <Articles />
             <Articles />
             <Articles />
